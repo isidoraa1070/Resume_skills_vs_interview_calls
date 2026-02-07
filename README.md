@@ -54,7 +54,9 @@ This service provides an **interactive API documentation** powered by **Swagger 
 1. **Access Swagger UI**  
 After running the service, open your browser and navigate to: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
+
 Here you'll see a user-friendly interface listing all available endpoints, their parameters, and request/response examples.
+
 
 This provides a more detailed, structured view of the API, including data schemas.
 
