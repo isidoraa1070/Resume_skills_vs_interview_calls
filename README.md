@@ -58,8 +58,18 @@ This service provides an **interactive API documentation** powered by **Swagger 
 
    This provides a more detailed, structured view of the API, including data schemas.
 
+2. **Endpoint Usage Tips**
 
-2. **Testing Endpoints via Swagger**  
+- **Model Matching by Name**:  
+  Each model is identified and tracked by its `model_name`.  
+  Make sure to **create a model first** using `create_model`, then use the **exact same `model_name`** when training, predicting, or getting columns.  
+  Swagger will only execute actions correctly if the model exists and the names match.
+
+- **“Try it out” Button**:  
+  In Swagger UI, click **Try it out** for any endpoint before filling parameters and executing the request.  
+  This enables editing the input fields (JSON body or query parameters) directly in the browser.
+
+3. **Testing Endpoints via Swagger**  
 - **Create Model**: Click on the endpoint, fill in the optional parameters (`fit_intercept`, `positive`), and click **Execute**.  
 - **Train Model**: Upload a path to CSV dataset, configure preprocessing options (`drop_columns`, `binary_columns`, `encode_degree`) and click **Execute** to train the model and view metrics.  
 - **Predict**: Provide new input data in JSON format according to the model’s feature columns and click **Execute** to receive predictions.  
