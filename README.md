@@ -67,6 +67,7 @@ This service provides an **interactive API documentation** powered by **Swagger 
 - **“Try it out” Button**:  
   In Swagger UI, click **Try it out** for any endpoint before filling parameters and executing the request.  
   This enables editing the input fields (JSON body or query parameters) directly in the browser.
+  
 
 3. **Testing Endpoints via Swagger**  
 - **Create Model**: Click on the endpoint, fill in the optional parameters (`fit_intercept`, `positive`), and click **Execute**.  
